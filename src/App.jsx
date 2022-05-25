@@ -1,3 +1,4 @@
+
 const App = () => {
   const opciones = fetch("httpps://api.genshin.dev/",);
 
