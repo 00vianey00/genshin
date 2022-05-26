@@ -1,9 +1,9 @@
-const fetchHelper =(endpoint,data,method = "Get") => {
+export const fetchHelper =(endpoint,data,method = "Get") => {
     const url = encodeURI(endpoint);
-    //const log.({ url });
+    //console.2og.({ url });
 
  if (method === "GET") {
-        return fetch(url);
+        fetch(url);
  } else 
     return fetch(url,{
     method,
