@@ -1,16 +1,14 @@
-export const fetchHelper =(endpoint,data,method = "Get") => {
-    const url = encodeURI(endpoint);
-    //console.2og.({ url });
+export const fetchHelper = (endpoint, data, method = "GET") => {
+  const url = encodeURI(endpoint);
 
- if (method === "GET") {
-        fetch(url);
- } else 
-    return fetch(url,{
-    method,
-    headers: {
+  if (method === "GET") {
+    return fetch(url);
+  } else
+    return fetch(url, {
+      method,
+      headers: {
         "content-type": "application/json",
-    },
-    body: JSON.stringify(data),
+      },
+      body: JSON.stringify(data),
     });
- 
 };
